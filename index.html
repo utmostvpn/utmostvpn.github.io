@@ -42,15 +42,13 @@
             margin-top: 20px;
         }
 
-        /* Контейнер для твоего логотипа */
+        /* Контейнер для твоего логотипа - убрали кривое свечение, добавили скругление */
         .logo {
             width: 120px;
             height: 120px;
             margin: 0 auto 15px;
             display: block;
-            /* Если логотип лежит в той же папке на GitHub, укажи правильное имя файла вместо logo.png */
-            content: url('logo.png'); 
-            filter: drop-shadow(0 0 15px var(--neon-glow));
+            border-radius: 28px;
         }
 
         .header h1 {
@@ -158,6 +156,7 @@
             gap: 10px;
         }
 
+        /* Обновленные кнопки для SVG иконок */
         .action-add {
             display: flex;
             align-items: center;
@@ -168,8 +167,6 @@
             background: rgba(0, 229, 255, 0.05);
             color: var(--neon-cyan);
             border: 1px solid var(--neon-cyan);
-            font-size: 26px;
-            font-weight: 400;
             text-decoration: none;
             transition: all 0.2s ease;
             box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
@@ -192,7 +189,6 @@
             color: #fff;
             text-decoration: none;
             border: 1px solid rgba(255,255,255,0.08);
-            font-size: 20px;
             transition: all 0.2s ease;
         }
 
@@ -252,8 +248,12 @@
                 </div>
             </div>
             <div class="app-actions">
-                <a id="btn-streisand" href="#" class="action-add">+</a>
-                <a href="https://apps.apple.com/us/app/streisand/id6450534064" target="_blank" class="action-dl">↓</a>
+                <a id="btn-streisand" href="#" class="action-add">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </a>
+                <a href="https://apps.apple.com/us/app/streisand/id6450534064" target="_blank" class="action-dl">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </a>
             </div>
         </div>
 
@@ -266,8 +266,12 @@
                 </div>
             </div>
             <div class="app-actions">
-                <a id="btn-v2box" href="#" class="action-add">+</a>
-                <a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" class="action-dl">↓</a>
+                <a id="btn-v2box" href="#" class="action-add">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </a>
+                <a href="https://apps.apple.com/us/app/v2box-v2ray-client/id6446814690" target="_blank" class="action-dl">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </a>
             </div>
         </div>
 
@@ -280,8 +284,12 @@
                 </div>
             </div>
             <div class="app-actions">
-                <a id="btn-v2raytun" href="#" class="action-add">+</a>
-                <a href="https://apps.apple.com/us/app/v2raytun/id6476628951" target="_blank" class="action-dl">↓</a>
+                <a id="btn-v2raytun" href="#" class="action-add">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                </a>
+                <a href="https://apps.apple.com/us/app/v2raytun/id6476628951" target="_blank" class="action-dl">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </a>
             </div>
         </div>
     </div>
