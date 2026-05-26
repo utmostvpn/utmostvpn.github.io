@@ -290,7 +290,23 @@
 
     <script>
         var params = new URLSearchParams(window.location.search);
-        var key = params.get('key') || "";
+        var key = "";
+
+        // Проверяем новую зашифрованную ссылку (Base64)
+        if (params.has('data')) {
+            try {
+                // Расшифровываем строку
+                key = decodeURIComponent(escape(atob(params.get('data'))));
+            } catch (e) {
+                console.error("Ошибка расшифровки", e);
+                key = params.get('data'); // Fallback, если что-то пошло не так
+            }
+        } 
+        // Поддержка старых ссылок
+        else if (params.has('key')) {
+            key = params.get('key');
+        }
+
         key = key.trim();
 
         if (key) {
